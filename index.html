@@ -61,9 +61,9 @@
         };
 
         // --- Bird Image ---
-        // IMPORTANT: Make sure you have a file named 'image.png' in the same folder as this HTML file.
+        // IMPORTANT: Make sure you have a file named 'images.jpg' in the same folder as this HTML file.
         const birdImg = new Image();
-        birdImg.src = 'image.png';
+        birdImg.src = 'images.jpg';
         
         // Fallback drawing if the image fails to load
         let imageLoaded = false;
@@ -71,7 +71,7 @@
             imageLoaded = true;
         };
         birdImg.onerror = () => {
-            console.error("Could not load 'image.png'. Make sure it's in the same directory. Using a fallback square.");
+            console.error("Could not load 'images.jpg'. Make sure it's in the same directory. Using a fallback square.");
             imageLoaded = false;
         };
 
